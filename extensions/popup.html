@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+  </head>
+  <body>
+    <div id="div-forms">
+      <div class="text-center">
+        <img
+          class="img-circle"
+          id="img_logo"
+          src="http://bootsnipp.com/img/logo.jpg"
+        />
+      </div>
+      <!-- Begin # Login Form -->
+      <form id="login-form">
+        <div class="modal-body">
+          <div id="div-login-msg">
+            <span id="text-login-msg">🌤️ Vui lòng đăng nhập để tiếp tục.</span>
+          </div>
+          <br />
+          <input
+            id="email"
+            class="form-control"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            id="password"
+            class="form-control"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <div class="checkbox">
+            <label> <input type="checkbox" /> Remember me </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block " id="btn-submit">
+              Login
+            </button>
+          </div>
+          <div>
+            <button id="login_lost_btn" type="button" class="btn btn-link">
+              Lost Password?
+            </button>
+            <button id="login_register_btn" type="button" class="btn btn-link">
+              Register
+            </button>
+          </div>
+        </div>
+      </form>
+      <!-- End # Login Form -->
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popup.js"></script>
+  </body>
+</html>

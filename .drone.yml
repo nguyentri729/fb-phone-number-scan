@@ -1,0 +1,30 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: publish
+    image: appleboy/drone-ssh
+    settings:
+      host: server-ip
+      port: 22
+      username: root
+      password:
+        from_secret: password
+      command_timeout: 6m
+      script:
+        - cd /opt/fb-scan-phonenumbers
+        - git reset --hard HEAD
+        - git pull
+        - cd app/
+        - docker-compose up --build -d
+        - cd ../client
+        - docker-compose up --build -d
+    when:
+      branch:
+        - master
+        # - feature/*
+      event:
+        - push
+      status:
+        - success

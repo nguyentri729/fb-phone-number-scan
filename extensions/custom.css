@@ -1,0 +1,11 @@
+button.btn-find-phone {
+    width: fit-content;
+    height: fit-content;
+    margin-right: 3px;
+    padding: 5px; 
+    background-color: rgb(255 0 0 / 72%);
+    border-radius: 5px;
+    border-color:rgb(255 0 0 / 72%);
+    color: white;
+
+  }

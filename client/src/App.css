@@ -1,0 +1,45 @@
+@import '~antd/dist/antd.css';
+
+
+
+.logo {
+  height: 32px;
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+.site-layout-background {
+  background: #fff;
+}
+
+
+.row-hightlight{
+  background-color: #dff9fb;
+  
+}
+.row-hightlight:hover, .row-hightlight tr:hover, .row-hightlight td:hover {
+  background-color: #dff9fb!important;
+}
+
+.row-hightlight:hover, .row-hightlight tr, .row-hightlight td {
+  background-color: #dff9fb!important;
+}
+
+/* 
+tr:hover {
+  background: none!important;
+}
+
+td:hover {
+  background: none!important;
+
+}
+
+.tr:hover {
+  background: none!important;
+}
+
+.td:hover {
+  background: none!important;
+} */

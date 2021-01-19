@@ -1,0 +1,5 @@
+.drone
+*/uploads/*.txt
+*/uploads/history/*.txt
+
+app/import.js
